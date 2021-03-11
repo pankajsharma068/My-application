@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.panka.my_project.QuizActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroud"
+        android:layout_marginBottom="326dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_page"
+            android:padding="25dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#000"
+
+
+            android:id="@+id/question" />
+
+        <TextView
+            android:text="0/20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/numindecator" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:id="@+id/optioncontainer"
+        android:layout_marginTop="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/optionbut"
+            android:layout_margin="4dp"
+            android:id="@+id/button2" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/optionbut"
+            android:id="@+id/button4" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:background="@drawable/optionbut"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/optionbut"
+            android:id="@+id/button" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="Previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8"
+        android:background="@drawable/optionbut"
+        android:layout_marginEnd="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/next"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:text="lNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="10dp"
+        android:enabled="false"
+        android:alpha="0.7"
+        android:id="@+id/next"
+        android:background="@drawable/optionbut"
+
+        android:layout_alignBaseline="@+id/button8"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"/>
+
+
+</RelativeLayout>
